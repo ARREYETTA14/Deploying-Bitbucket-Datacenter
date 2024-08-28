@@ -189,7 +189,7 @@ definitions:
 ![image](https://github.com/user-attachments/assets/51a97a99-4ca7-47a6-b067-890eab237d1d)
 
 
-NB: If you receive failures when running your pipeline script and after checking you get a **command not found** error after checking docker-compose version, on your Amazon Linux 2 instance, it might be due to one of the following reasons:
+**NB:** If you receive failures when running your pipeline script and after checking you get a **command not found** error after checking docker-compose version, on your Amazon Linux 2 instance, it might be due to one of the following reasons:
 
 **Incorrect Installation Path**: Docker Compose might not be in your system's PATH.
 **Installation Command Issue**: The command used to install Docker Compose may have failed or been incomplete.
