@@ -80,7 +80,7 @@ volumes:
 
 5. Navigate to the repository setting on your left pane, go to **SSH Keys**. Choose **use my own key**, then paste in the private and public keys you generated from your ec2 at the appropriate section, then **save the key**.  At the bottom, at the **Known hosts** section at the level of **Host address**, paste in your instance public_IP, hit on **fetch** and **add hosts**. You will have the following.
 
-
+![image](https://github.com/user-attachments/assets/031a1bd6-9908-48b8-8f7b-c1b95081443d)
 
 6. Go to the ‘Repository variable’ on the left pane. 
 Add the following variables:
@@ -90,22 +90,37 @@ Add the following variables:
 **AWS_SECRET_ACCESS_KEY** = your AWS secret keys
 **EC2_HOST** = your ec2’s public up or public DNS
 
+![image](https://github.com/user-attachments/assets/d3c923f7-e26a-4911-a6a4-29baf81c469a)
 
 8. Navigate to your Compass Cloud account, Click on **App** at the top.
 
+![image](https://github.com/user-attachments/assets/c202c2e8-a7f6-41e0-9239-374fa7c889d7)
+
 Search **Bitbucket**, click on it, Click “Get App” to install it.
+
+![image](https://github.com/user-attachments/assets/1d83a610-be35-475c-a5ee-cb186977ba4a)
 
 Click **Configure** to establish a connection with the exact repository of your bitbucket account.
 
+![image](https://github.com/user-attachments/assets/8736c9af-2cd5-4035-9330-cb31ba7de81c)
+
 Click **Connect**
+
+![image](https://github.com/user-attachments/assets/6ba34606-ec26-4495-a8ed-abdc177b4da4)
 
 Select the desired repository you wish to grant access to using the **drop-down** arrow then Click on **Grant Access**.
 
+![image](https://github.com/user-attachments/assets/02d3f33c-f3ad-4fb6-bc57-efbd099cce27)
+
 Navigate to your **Component** tab, click on **create**, Pass the name of the component, create your desired team then paste in the bitbucket URL in the provided space or choose the URL if options are given then hit on create.
+
+![image](https://github.com/user-attachments/assets/9e5f268a-fefa-4ca1-8847-c827f276862b)
 
 You will be navigated to the below interface to show that your connection with Bitbucket has been established.
 
-8. In your Bitbucket account, click on **pipeline** on the left pane. 
+![image](https://github.com/user-attachments/assets/79d7825d-28c9-426e-a61a-a09a5eb895fe)
+
+9. In your Bitbucket account, click on **pipeline** on the left pane. 
 Create your pipeline with the following script then commit the changes. **make sure to edit the region in your pipeline script to match the region in which your instance is running**
 ```sh
 image: atlassian/default-image:latest
@@ -160,9 +175,19 @@ definitions:
 
 10. After committing the pipeline script, navigate back to **pipeline** to see how the script is deployed. After it deploys successfully, you will have the following view.
 
-11. Navigate to your AWS account, copy the public_I YEW p of your instance, paste in your browser then add in the relevant port **public_Ip:7990** or **public_Ip:7999**. You will have the following result
+![image](https://github.com/user-attachments/assets/b52081f5-7afd-400f-8265-bb51caf9bd34)
+
+
+11. Navigate to your AWS account, copy the public_I YEW p of your instance, paste in your browser then add in the relevant port **public_Ip:7990** or **public_Ip:7999**. You will have the following result.
+
+![image](https://github.com/user-attachments/assets/3f4ab8b3-bb4f-4a43-b051-b9cfad4e3568)
+
 
 12. Navigate to your compass account and you will see the below type of interface. You will see the below **dots** on your activity event display and if you click on it, it will redirect you to your **Bitbucket pipeline** deployment page. The dots depend on the number of your pipeline runs.
+
+
+![image](https://github.com/user-attachments/assets/51a97a99-4ca7-47a6-b067-890eab237d1d)
+
 
 NB: If you receive failures when running your pipeline script and after checking you get a **command not found** error after checking docker-compose version, on your Amazon Linux 2 instance, it might be due to one of the following reasons:
 
