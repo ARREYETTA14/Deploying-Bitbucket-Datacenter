@@ -178,7 +178,7 @@ definitions:
 ![image](https://github.com/user-attachments/assets/b52081f5-7afd-400f-8265-bb51caf9bd34)
 
 
-11. Navigate to your AWS account, copy the public_I YEW p of your instance, paste in your browser then add in the relevant port **public_Ip:7990** or **public_Ip:7999**. You will have the following result.
+11. Navigate to your AWS account, copy the public_Ip of your instance, paste in your browser then add in the relevant port **public_Ip:7990** or **public_Ip:7999**. You will have the following result.
 
 ![image](https://github.com/user-attachments/assets/3f4ab8b3-bb4f-4a43-b051-b9cfad4e3568)
 
